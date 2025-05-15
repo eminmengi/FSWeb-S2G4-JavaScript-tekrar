@@ -99,7 +99,7 @@ let ucetambolunenler =[],
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar =[],
-  tekraredensayilar;
+  tekraredensayilar =[];
 
 // 3a çözümü
 
@@ -138,11 +138,28 @@ console.log("500'den küçük sayılar:",besyuzdenkucuksayilar);
 // 3e çözümü
 
 siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a-b);
-console.log(siralisayilar);
+console.log("Küçükten büyüğe sıralı sayılar: ", siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+const sayac = {};
+
+for (let i = 0; i < sayilar.length; i++){
+  const sayi = sayilar[i];
+  if (sayac[sayi]){
+    sayac[sayi]++;
+  }else {
+    sayac[sayi] = 1;
+  }
+}
+
+for (const sayi in sayac){
+  if (sayac[sayi] > 1) {
+    tekraredensayilar.push(`${sayi} sayısı ${sayac[sayi]} kere tekrar edilmiştir.`)
+  }
+}
+
+console.log(tekraredensayilar);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
