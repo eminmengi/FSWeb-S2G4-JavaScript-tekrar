@@ -155,7 +155,7 @@ for (let i = 0; i < sayilar.length; i++){
 
 for (const sayi in sayac){
   if (sayac[sayi] > 1) {
-    tekraredensayilar.push(`${sayi} sayısı ${sayac[sayi]} kere tekrar edilmiştir.`)
+    tekraredensayilar.push(`${sayi} sayısı ${sayac[sayi]} kere tekrar edilmiştir`)
   }
 }
 
