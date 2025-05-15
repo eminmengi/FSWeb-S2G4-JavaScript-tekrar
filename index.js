@@ -93,7 +93,7 @@ console.log(CemberinAlani(5, pi));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let ucetambolunenler,
+let ucetambolunenler =[],
   enkucuk,
   enbuyuk,
   ucebolunenlerintoplami,
@@ -118,7 +118,12 @@ console.log("En küçük sayı: ", enkucuk);
 
 // 3b çözümü:
 
-/* kodlar buraya */
+sayilar.forEach((sayi)=>{
+  if(sayi % 3 === 0 ){
+    ucetambolunenler.push(sayi);
+  }
+});
+console.log("3'ün tam katı olan sayılar:", ucetambolunenler);
 
 // 3c çözümü:
 
