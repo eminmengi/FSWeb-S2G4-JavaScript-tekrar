@@ -52,7 +52,6 @@ console.log(KareninAlani(10));
 */
 
 function CemberinCevresi(yariCap) {
-  const pi = 3.14;
   return 2 * pi * yariCap ;
 }
 console.log(CemberinCevresi(5));
@@ -67,9 +66,11 @@ console.log(CemberinCevresi(5));
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinAlani(yariCap, pi) {
+  return pi * Math.pow(yariCap, 2);
 }
+
+console.log(CemberinAlani(5, pi));
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
