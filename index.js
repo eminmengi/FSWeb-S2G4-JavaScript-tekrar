@@ -98,7 +98,7 @@ let ucetambolunenler =[],
   enbuyuk,
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
-  siralisayilar,
+  siralisayilar =[],
   tekraredensayilar;
 
 // 3a çözümü
@@ -137,7 +137,8 @@ console.log("500'den küçük sayılar:",besyuzdenkucuksayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a-b);
+console.log(siralisayilar);
 
 // 3f çözümü
 
